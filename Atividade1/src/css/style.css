@@ -1,0 +1,188 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Courier+Prime&family=Darker+Grotesque&family=Inter:wght@300;400&family=Kanit:wght@300&family=Montserrat:wght@500&family=Poppins:wght@100;300;500&family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Courier+Prime&family=Darker+Grotesque&family=Inter:wght@300;400&family=Kanit:wght@300&family=Montserrat:wght@500&family=Poppins:wght@100;300;500&family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+  }
+
+  body {
+      margin: 0;
+  }
+
+  .fundo {
+      background-color: black;
+      background-image:
+      radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+      radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+      radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+      radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+      background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+      background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+
+  .titulo1 {
+      color: white;
+      font-family: 'Kanit', sans-serif;
+      font-size: 50px;
+      text-shadow: -5px 5px 5px rgb(233, 229, 229);
+      font-variant-caps: small-caps;
+  }
+
+  .container-titulo {
+      padding-left: 560px;
+  }
+
+  .card {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-image: linear-gradient(#333, #333);
+      overflow: hidden;
+      background-size: cover;
+      border-radius: 16px;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all .5s;
+  }
+
+  .card:hover {
+      background-image: linear-gradient(#333, rgb(23, 23, 23));
+  }
+
+  .container {
+      color: #fff;
+      min-height: 100vh;
+      padding-left: 200px;
+      padding-top: 50px;
+  }
+
+  .card .imagem {
+      background-image: url(/src/images/IU.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 360px;
+      height: 200px;
+      opacity: .8;
+      transition: all .5s;
+      z-index: 2;
+  }
+
+  .card:hover .imagem {
+      opacity: 1;
+      width: 370px;
+  }
+
+  .card .imagem figcaption {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 100;
+      text-transform: uppercase;
+  }
+
+  .card .content p {
+      margin-bottom: 0;
+      opacity: 0;
+  }
+
+  .card .content {
+      padding: 0 20px;
+      overflow: hidden;
+      height: 0;
+      transition: all .5s;
+      transform: translateY(30px);
+      opacity: 1;
+  }
+
+  .card:hover .content {
+      padding: 20px;
+      height: 110px;
+      transform: translateY(0);
+  }
+
+  .card .content .title {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .card .arrow {
+      padding-bottom: 15px;
+      font-size: 28px;
+      transform: rotate(-180deg);
+      transition: all .5s;
+  }
+
+  .card:hover .arrow {
+      transform: rotate(0);
+
+  }
+
+  figcaption {
+      color: #fff;
+      font: italic smaller sans-serif;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 100;
+  }
+
+  .citacao {
+      padding-top: 50px;
+      margin-left: 600px;
+      margin-top: 10px;
+      font-style: italic;
+  }
+
+  .lista-nao-ordenada{
+      list-style-type: circle;
+  }
+
+  .lista-ordenada{
+      list-style-type: upper-roman;
+  }
+
+  .lista-nao-ordenada-container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 200px;
+  }
+
+  .font {
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      padding-bottom: 10px;
+  }
+
+  .font-2 {
+      font-family: 'Kanit', sans-serif;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-variant-caps: small-caps;
+  }
+
+  .font-citacao {
+      font-family: 'Kanit', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .lista-ordenada-container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 200px;
+  }
+
+  .paragrafo {
+      padding-right: 150px;
+      padding-top: 10px;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      padding-bottom: 10px;
+  }
